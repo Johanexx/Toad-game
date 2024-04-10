@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-size:40% ;
+}
+
+.logo{
+    font-weight: 600;
+    font-size: 3.8rem;
+
+}
+
+header {
+    position: absolute ;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header h1 {
+  
+    font-size: 1rem;
+   
+}
+header h2{
+    font-size: 4rem;
+}
+header p{
+    font-size: 1.8rem;
+}
+header button{
+  
+    padding: 0 5px;
+    width: 190px;
+    outline: none;
+    border: 0 ;
+    height: 40px;
+    font-weight: 500;
+    background-color: chartreuse;
+    margin-bottom: 40px;
+    transition: width 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+    
+}
+
+
+header button:hover{
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    border-radius: 20px;
+    background-color:deepskyblue;
+  
+
+}
+
+.emp {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+.log {
+    position: absolute;
+    width: 600px;
+    height: 260px;
+    left: 27.3%;
+    top: 6%;
+}
+.sond {
+    padding: 0 5px;
+    width: 140px;
+    outline: none;
+    border: 0 ;
+    height: 60px;
+    font-weight: 500;
+    background-color:transparent;
+    margin-bottom: 50px;
+    transition: width 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+    position: absolute ;
+    top: 6%;
+    left: 96%;
+    transform: translate(-50%, -50%); 
+  }
+.fondo2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+  }
+.marco {
+    position: absolute;
+    width: 750px;
+    height: 730px;
+    top: 2.8%;
+    left: 21.9%;
+    
+  }
+  .fondoConf {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+  }
+.Config {
+    position: absolute;
+    width: 750px;
+    height: 730px;
+    top: 1.6%;
+    left: 22%;
+    
+  }
+  .insta{
+    padding: 0 5px;
+    width: 140px;
+    outline: none;
+    border: 0 ;
+    height: 60px;
+    font-weight: 500;
+    background-color:transparent;
+    margin-bottom: 50px;
+    transition: width 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+    position: absolute ;
+    top: 82%;
+    left: 68%;
+    transform: translate(-50%, -50%); 
+  }
+  .faceb {
+    padding: 0 5px;
+    width: 170px;
+    outline: none;
+    border: 0 ;
+    height: 60px;
+    font-weight: 500;
+    background-color:transparent;
+    margin-bottom: 55px;
+    transition: width 0.5s;
+    cursor: pointer;
+    border-radius: 25px;
+    position: absolute ;
+    top: 82%;
+    left: 33%;
+    transform: translate(-50%, -50%); 
+  }
+  .regresar {
+    padding: 0 5px;
+    width: 140px;
+    outline: none;
+    border: 0 ;
+    height: 60px;
+    font-weight: 500;
+    background-color:transparent;
+    margin-bottom: 50px;
+    transition: width 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+    position: absolute ;
+    top: 6%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    
+  }
+  .configuracion {
+    padding: 0 5px;
+    width: 140px;
+    outline: none;
+    border: 0 ;
+    height: 60px;
+    font-weight: 500;
+    background-color:transparent;
+    margin-bottom: 50px;
+    transition: width 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+    position: absolute ;
+    top: 6%;
+    left: 96%;
+    transform: translate(-50%, -50%); 
+  }
+  /* Estilos base */
+.contenedor {
+  width: 80%; /* Ancho general del contenedor */
+  margin: auto; /* Margen automático para centrar */
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Media Queries para diferentes dispositivos */
+@media only screen and (max-width: 768px) {
+  /* Estilos para dispositivos con un ancho máximo de 768px (por ejemplo, tabletas) */
+  .contenedor {
+      width: 90%; /* Ancho del contenedor para tabletas */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Estilos para dispositivos con un ancho máximo de 480px (por ejemplo, teléfonos móviles) */
+  .contenedor {
+      width: 95%; /* Ancho del contenedor para teléfonos móviles */
+  }
+}
+
+
+
+
+
+
+
+
+

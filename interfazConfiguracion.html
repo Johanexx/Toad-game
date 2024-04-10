@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toad Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="fondoConf" src ="img/fondo.jpg" alt="">
+    <img class="Config" src ="img/configuracion.png" alt="">
+
+    <a href="https://instagram.com/toad_game/">
+        <button><img id="btnInstagram" class="insta" src = "icon/instagram.svg" alt =""></button>
+</a>
+    
+    <button><img class="faceb" src = "icon/facebook.svg" alt =""></button>
+    <button><img id= "btnregresar"class="regresar" src = "icon/regresar.svg" alt =""></button>
+    <script>
+document.getElementById("btnregresar").addEventListener("click", function() {
+    // Redirigir a la interfaz 2
+    window.location.href = "index.html";
+});
+    </script>
+    <script>
+        document.getElementById("btnInstagram").addEventListener("click", function() {
+            window.location.href = "https://instagram.com/toad_game/";
+        });
+    </script>
+</body>
+</html>

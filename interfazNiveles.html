@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toad Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class= "fondo2" src ="img/fondo.jpg" alt="">
+    <img class= "marco" src="img/niveles.png" alt="">
+
+    <button><img id= "btnregresar"class="regresar" src = "icon/regresar.svg" alt =""></button>
+    <button><img id= "btnconfiguracion"class="configuracion" src = "icon/conf.svg" alt =""></button>
+
+    <script>
+document.getElementById("btnconfiguracion").addEventListener("click", function() {
+    // Redirigir a la interfaz 2
+    window.location.href = "interfazConfiguracion.html";
+});
+    </script>
+     <script>
+        document.getElementById("btnregresar").addEventListener("click", function() {
+            // Redirigir a la interfaz 2
+            window.location.href = "index.html";
+        });
+            </script>
+
+</body>
+</html>
