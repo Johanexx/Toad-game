@@ -3,10 +3,17 @@
     margin:0;
     box-sizing: border-box;
 }
-html{
-    font-size:40% ;
-}
 
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
+}
+#contenedor {
+  width: 100%;
+  height: 100%;
+}
 .logo{
     font-weight: 600;
     font-size: 3.8rem;
@@ -70,6 +77,10 @@ header button:hover{
     height: 260px;
     left: 27.3%;
     top: 6%;
+    transition: transform 0.3s ease;
+}
+.log:hover {
+  transform: scale(1.1); 
 }
 .sond {
     padding: 0 5px;
@@ -80,14 +91,17 @@ header button:hover{
     font-weight: 500;
     background-color:transparent;
     margin-bottom: 50px;
-    transition: width 0.5s;
+    transition: transform 0.3s ease;
     cursor: pointer;
     border-radius: 20px;
     position: absolute ;
     top: 6%;
-    left: 96%;
-    transform: translate(-50%, -50%); 
-  }
+    left: calc(100% - 140px); /* Ajustamos la posición para que el botón esté en el borde derecho */
+}
+
+.sond:hover {
+  transform: scale(1.1) translate(-50%, -50%); /* Aplicamos la transformación solo en la escala */
+}
 .fondo2 {
     position: relative;
     top: 0;
@@ -97,11 +111,14 @@ header button:hover{
   }
 .marco {
     position: absolute;
-    width: 750px;
-    height: 730px;
+    width: 650px;
+    height: 630px;
     top: 2.8%;
-    left: 21.9%;
-    
+    left: 24%;
+    transition: transform 0.5s ease;
+  }
+  .marco:hover {
+    transform: scale(1.1); 
   }
   .fondoConf {
     position: relative;
@@ -187,34 +204,180 @@ header button:hover{
     left: 96%;
     transform: translate(-50%, -50%); 
   }
-  /* Estilos base */
-.contenedor {
-  width: 80%; /* Ancho general del contenedor */
-  margin: auto; /* Margen automático para centrar */
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-/* Media Queries para diferentes dispositivos */
-@media only screen and (max-width: 768px) {
-  /* Estilos para dispositivos con un ancho máximo de 768px (por ejemplo, tabletas) */
-  .contenedor {
-      width: 90%; /* Ancho del contenedor para tabletas */
+  .botones-niveles {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-gap: 15.7px; 
+    justify-content: center; 
+    top: 23%;
+    left: 31.6%;
   }
-}
-
-@media only screen and (max-width: 480px) {
-  /* Estilos para dispositivos con un ancho máximo de 480px (por ejemplo, teléfonos móviles) */
-  .contenedor {
-      width: 95%; /* Ancho del contenedor para teléfonos móviles */
+  
+  .botones-niveles button {
+    padding: 20px 30px; 
+    font-size: 17px; 
+    background-color:cornflowerblue; 
+    color: white; 
+    border: none; 
+    border-radius: 50%;
+    cursor: pointer;
+  
   }
+  .botones-niveles button:nth-child(1) { background-color:coral; }
+
+  .botones-niveles button:hover {
+    background-color: #45a049; 
+  }
+  .botones-config  {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    grid-gap: 26px; 
+    justify-content: center; 
+    top: 31%;
+    left: 41.2%;
+  }
+  
+  .botones-config button {
+    padding: 20px 30px; 
+    font-size: 17px; 
+    background-color:lightseagreen; 
+    color: white; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+  
+  }
+  
+  .botones-config button:hover {
+    background-color: #45a049; 
+  }
+  .izqu{
+    padding: 0 5px;
+    width: 170px;
+    outline: none;
+    border: 0 ;
+    height: 60px;
+    font-weight: 500;
+    background-color:transparent;
+    margin-bottom: 55px;
+    transition: width 0.5s;
+    cursor: pointer;
+    border-radius: 25px;
+    position: absolute ;
+    top: 83%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+
+
+  }
+  .derec{
+  
+
+    padding: 0 5px;
+    width: 140px;
+    outline: none;
+    border: 0 ;
+    height: 60px;
+    font-weight: 500;
+    background-color:transparent;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    border-radius: 20px;
+    position: absolute ;
+    top: 83%;
+    left: 63%;
+    transform: translate(-50%, -50%); 
+
+  }
+  .izqu:hover {
+    transform: scale(1.1) translate(-50%, -50%); 
+  }
+  .home {
+    padding: 0 5px;
+    width: 70px;
+    outline: none;
+    border: 0 ;
+    height: 60px;
+    font-weight: 500;
+    background-color:transparent;
+    margin-bottom: 50px;
+    transition: width 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+    position: absolute ;
+    top: 15%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+  }
+  .fondoJueg{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+  }
+.mano {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 61.2%;
+    left: 22%;
+    
+  }
+  .argolla {
+    position: absolute;
+    width: 20px;
+    height: 100px;
+    top: 1.6%;
+    left: 10%;
+    
+  }
+  .barrit {
+    position: absolute;
+    width: 30px;
+    height: 450px;
+    top: 10%;
+    left: 6%;
+    
+  }
+  .flecha {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid black;
+    position: absolute;
+    left: 50%;
+    bottom: 1%;
+    transform: translateX(-50%);
+    animation: moverFlecha 1s infinite alternate; /* Animación */
 }
 
+/* Definición de la animación */
+@keyframes moverFlecha {
+    0% {
+        bottom: 1%;
+    }
+    100% {
+        bottom: 99%;
+    }
+}.flecha.paused {
+  animation-play-state: paused;
+}
+ /* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  /* Estilos específicos para pantallas con un ancho máximo de 768px */
+}
 
+/* Estilos para pantallas medianas */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Estilos específicos para pantallas con un ancho mínimo de 768px y un máximo de 1024px */
+}
 
-
-
-
-
-
-
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 1024px) {
+  /* Estilos específicos para pantallas con un ancho mínimo de 1024px */
+}

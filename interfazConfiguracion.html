@@ -10,22 +10,45 @@
     <img class="fondoConf" src ="img/fondo.jpg" alt="">
     <img class="Config" src ="img/configuracion.png" alt="">
 
-    <a href="https://instagram.com/toad_game/">
+    <a href="https://www.instagram.com/toad_game?igsh=MTZzZnF4enIyaHg1eQ==">
         <button><img id="btnInstagram" class="insta" src = "icon/instagram.svg" alt =""></button>
 </a>
-    
-    <button><img class="faceb" src = "icon/facebook.svg" alt =""></button>
+    <a href="https://www.facebook.com/people/ToadGame/61558002372505/">
+        <button><img id="btnFace" class="faceb" src = "icon/facebook.svg" alt =""></button>
+    </a>
+   
     <button><img id= "btnregresar"class="regresar" src = "icon/regresar.svg" alt =""></button>
+    <button><img id= "btnhome"class="home" src = "icon/home.svg" alt =""></button>
+    <div class="botones-config">
+        
+        <button ype="button">Idioma</button>
+        <button type="button">Ayuda y Asistencia</button>
+        <button type="button">Condiciones y Servicios</button>
+        <button type="button">Politica y Privacidad</button>
+    </div>
+
     <script>
 document.getElementById("btnregresar").addEventListener("click", function() {
     // Redirigir a la interfaz 2
     window.location.href = "index.html";
 });
     </script>
+        <script>
+            document.getElementById("btnhome").addEventListener("click", function() {
+                // Redirigir a la interfaz 2
+                window.location.href = "index.html";
+            });
+                </script>
+            
     <script>
         document.getElementById("btnInstagram").addEventListener("click", function() {
-            window.location.href = "https://instagram.com/toad_game/";
+            window.location.href = "https://www.instagram.com/toad_game?igsh=MTZzZnF4enIyaHg1eQ==";
         });
     </script>
+<script>
+    document.getElementById("btnFce").addEventListener("click", function() {
+        window.location.href = "https://www.facebook.com/people/ToadGame/61558002372505/";
+    });
+</script>
 </body>
 </html>

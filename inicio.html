@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Toad Game</title>
+</head>
+<body>
+    <img class="fondoJueg" src ="img/fondo.jpg" alt="">
+    <img class="mano" src ="img/Picsart_24-04-16_10-50-11-606.png" alt="">
+    <img class="argolla" src = "img/argolla.png" alt="">
+    <img class="barrit" src ="img/Barrita.png" alt="">
+    <div class="flecha" id="flecha"></div>
+    
+    <script>
+        document.getElementById('flecha').addEventListener('click', function() {
+            this.classList.toggle('paused');
+        });
+    </script>
+</body>
+</html>

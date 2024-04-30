@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible"content="IE=edge">
         <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+       
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -18,9 +19,9 @@
     <nav>
        
     </nav>
-    <header>
+    <header class="header">
     <!--  -->
-        <button>INICIAR<img src = ""alt =""> </button><br>
+        <button id="btnInicio">INICIAR<img src = ""alt =""> </button><br>
         <button id="btnNIVELES">NIVELES<img src = "" alt = ""></button><br>
         <button id ="btnCONFIGURACION">CONFIGURACION<img src = "" alt = "" ></button> 
         
@@ -42,6 +43,14 @@ document.getElementById("btnNIVELES").addEventListener("click", function() {
    <script>
     document.getElementById("btnCONFIGURACION").addEventListener("click",function(){
     window.location.href= "interfazConfiguracion.html";
+    });
+   </script>
+
+   </script>
+
+   <script>
+    document.getElementById("btnInicio").addEventListener("click",function(){
+    window.location.href= "inicio.html";
     });
    </script>
     </body>
